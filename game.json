@@ -388,6 +388,195 @@
         "name": "text_box-1-0.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "characters/kenta_down.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "characters\\kenta_down.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "characters/kenta_left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "characters\\kenta_left_1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "characters/kenta_up.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "characters\\kenta_up.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "characters/kenta_down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "characters\\kenta_down_1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "characters/kenta_down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "characters\\kenta_down_2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "characters/kenta_left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "characters\\kenta_left_2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "characters/kenta_up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "characters\\kenta_up_1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "characters/kenta_up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "characters\\kenta_up_2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tiles/passable.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiles\\passable.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tiles/impassable.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiles\\impassable.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tiles/warp.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiles\\warp.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tiles/signpost.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiles\\signpost.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tiles/script.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiles\\script.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tiles/person_event.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiles\\person_event.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tiles/collisionDetection-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiles\\collisionDetection-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "battle/player_bug.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "battle\\player_bug.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "battle/player_info.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "battle\\player_info.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "battle/foe_bug.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "battle\\foe_bug.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "battle/foe_info.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "battle\\foe_info.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "gui/text_box-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "gui\\text_box-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "gui/text_box-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "gui\\text_box-1-0.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -556,27 +745,6 @@
           "layer": "",
           "locked": false,
           "name": "warp",
-          "persistentUuid": "86e3aae9-2e3d-47da-a1e2-6860131ac862",
-          "width": 0,
-          "x": 144,
-          "y": 0,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "warpNo",
-              "value": "1"
-            }
-          ]
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "warp",
           "persistentUuid": "de878bc2-2096-4f9b-b8fc-a2e8f92c046e",
           "width": 0,
           "x": 64,
@@ -611,7 +779,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "kenta_down.png",
+                      "image": "characters\\kenta_down.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -659,7 +827,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "kenta_left_1.png",
+                      "image": "characters\\kenta_left_1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -707,7 +875,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "kenta_up.png",
+                      "image": "characters\\kenta_up.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -755,7 +923,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "kenta_down_1.png",
+                      "image": "characters\\kenta_down_1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -791,7 +959,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "kenta_down.png",
+                      "image": "characters\\kenta_down.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -827,7 +995,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "kenta_down_2.png",
+                      "image": "characters\\kenta_down_2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -863,7 +1031,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "kenta_down.png",
+                      "image": "characters\\kenta_down.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -911,7 +1079,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "kenta_left_1.png",
+                      "image": "characters\\kenta_left_1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -947,7 +1115,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "kenta_left_2.png",
+                      "image": "characters\\kenta_left_2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -995,7 +1163,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "kenta_up_1.png",
+                      "image": "characters\\kenta_up_1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1031,7 +1199,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "kenta_up.png",
+                      "image": "characters\\kenta_up.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1067,7 +1235,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "kenta_up_2.png",
+                      "image": "characters\\kenta_up_2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1103,7 +1271,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "kenta_up.png",
+                      "image": "characters\\kenta_up.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1182,7 +1350,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "passable.png",
+                      "image": "tiles\\passable.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1221,7 +1389,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "impassable.png",
+                      "image": "tiles\\impassable.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1260,7 +1428,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "warp.png",
+                      "image": "tiles\\warp.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1299,7 +1467,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "signpost.png",
+                      "image": "tiles\\signpost.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1338,7 +1506,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "script.png",
+                      "image": "tiles\\script.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1377,7 +1545,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "person_event.png",
+                      "image": "tiles\\person_event.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1416,7 +1584,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "collisionDetection-1.png",
+                      "image": "tiles\\collisionDetection-1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1466,29 +1634,6 @@
             "includeConfig": 0
           },
           "target": "player"
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "playercollision",
-                "warp",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [],
-          "events": []
         }
       ],
       "layers": [
@@ -1646,7 +1791,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "player_bug.png",
+                      "image": "battle\\player_bug.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1685,7 +1830,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "player_info.png",
+                      "image": "battle\\player_info.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1724,7 +1869,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "foe_bug.png",
+                      "image": "battle\\foe_bug.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1753,7 +1898,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "kenta_down_2.png",
+                      "image": "characters\\kenta_down.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1792,7 +1937,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "foe_info.png",
+                      "image": "battle\\foe_info.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1831,7 +1976,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "text_box-1-0.png",
+                      "image": "gui\\text_box-1-0.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
