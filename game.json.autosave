@@ -595,6 +595,15 @@
         "name": "select-1.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "gui/select.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "gui\\select.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2211,7 +2220,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "select-1.png",
+                      "image": "gui\\select.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
