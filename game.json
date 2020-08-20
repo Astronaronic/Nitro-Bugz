@@ -604,6 +604,15 @@
         "name": "gui\\select.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "gui/black.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "gui\\black.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2144,6 +2153,38 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "fade",
+          "persistentUuid": "4bff24c0-c345-4c9e-b255-e0c764bfb6de",
+          "width": 0,
+          "x": -160,
+          "y": -144,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "test_btn3",
+          "persistentUuid": "23df4ecb-e68d-41cc-bee8-af4c5d196315",
+          "width": 0,
+          "x": 192,
+          "y": 112,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -2290,314 +2331,397 @@
               ]
             }
           ]
+        },
+        {
+          "name": "fade",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "gui\\black.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "test_btn3",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "gui\\test_btn.png",
+                      "points": [
+                        {
+                          "name": "selected",
+                          "x": 0,
+                          "y": 8
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 80,
+                        "y": 8
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
         {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
           "disabled": false,
           "folded": false,
-          "name": "button 1",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "test_btn",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "fade",
+                "=",
+                "0"
               ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Tween::AddObjectPositionTween"
-                  },
-                  "parameters": [
-                    "test_btn",
-                    "Tween",
-                    "\"Hover\"",
-                    "160",
-                    "80",
-                    "\"linear\"",
-                    "150",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "selected",
-                    "=",
-                    "1"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "SourisBouton"
-                      },
-                      "parameters": [
-                        "",
-                        "Left"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Tween::AddObjectScaleTween"
-                      },
-                      "parameters": [
-                        "test_btn",
-                        "Tween",
-                        "\"grow\"",
-                        "1.25",
-                        "1.25",
-                        "\"linear\"",
-                        "1000",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Tween::AddObjectOpacityTween"
-                      },
-                      "parameters": [
-                        "test_btn",
-                        "Tween",
-                        "\"fade\"",
-                        "0",
-                        "\"linear\"",
-                        "1000",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ]
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "test_btn",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Tween::AddObjectPositionTween"
-                  },
-                  "parameters": [
-                    "test_btn",
-                    "Tween",
-                    "\"idle\"",
-                    "192",
-                    "80",
-                    "\"linear\"",
-                    "150",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "selected",
-                    "=",
-                    "1"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Tween::AddObjectPositionYTween"
-                  },
-                  "parameters": [
-                    "select",
-                    "Tween",
-                    "\"selected\"",
-                    "test_btn.Y(\"selected\")",
-                    "\"linear\"",
-                    "150",
-                    "150"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreX"
-                  },
-                  "parameters": [
-                    "select",
-                    "=",
-                    "test_btn.X(\"selected\")"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Opacity"
-                  },
-                  "parameters": [
-                    "test_btn",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "test_btn",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
+              "subInstructions": []
             }
           ],
-          "parameters": []
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "fade",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         },
         {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
           "disabled": false,
           "folded": false,
-          "name": "button 2",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "fade",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "buttons_on",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "fade",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Tween::AddObjectOpacityTween"
+              },
+              "parameters": [
+                "fade",
+                "Tween",
+                "\"endFade\"",
+                "255",
+                "\"linear\"",
+                "150",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "fade",
+                "=",
+                "0",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "fade",
+                "=",
+                "255"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PosX"
+              },
+              "parameters": [
+                "fade",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"New scene\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "test_btn",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "test_btn",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "fade",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "test_btn2",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "test_btn2",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Quit"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "buttons_on",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
           "events": [
             {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
               "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "test_btn2",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Tween::AddObjectPositionTween"
-                  },
-                  "parameters": [
-                    "test_btn2",
-                    "Tween",
-                    "\"Hover\"",
-                    "160",
-                    "96",
-                    "\"linear\"",
-                    "150",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "selected",
-                    "=",
-                    "2"
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "folded": true,
+              "name": "button 1",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
                   "disabled": false,
@@ -2607,11 +2731,13 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "SourisBouton"
+                        "value": "SourisSurObjet"
                       },
                       "parameters": [
+                        "test_btn",
                         "",
-                        "Left"
+                        "",
+                        ""
                       ],
                       "subInstructions": []
                     }
@@ -2620,16 +2746,16 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "Tween::AddObjectScaleTween"
+                        "value": "Tween::AddObjectPositionTween"
                       },
                       "parameters": [
-                        "test_btn2",
+                        "test_btn",
                         "Tween",
-                        "\"grow\"",
-                        "1.25",
-                        "1.25",
+                        "\"Hover\"",
+                        "160",
+                        "80",
                         "\"linear\"",
-                        "1000",
+                        "150",
                         ""
                       ],
                       "subInstructions": []
@@ -2637,149 +2763,625 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "Tween::AddObjectOpacityTween"
+                        "value": "ModVarScene"
                       },
                       "parameters": [
-                        "test_btn2",
+                        "selected",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SourisBouton"
+                          },
+                          "parameters": [
+                            "",
+                            "Left"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Tween::AddObjectScaleTween"
+                          },
+                          "parameters": [
+                            "test_btn",
+                            "Tween",
+                            "\"grow\"",
+                            "1.25",
+                            "1.25",
+                            "\"linear\"",
+                            "1000",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Tween::AddObjectOpacityTween"
+                          },
+                          "parameters": [
+                            "test_btn",
+                            "Tween",
+                            "\"fade\"",
+                            "0",
+                            "\"linear\"",
+                            "1000",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "buttons_on",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "test_btn",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::AddObjectPositionTween"
+                      },
+                      "parameters": [
+                        "test_btn",
                         "Tween",
-                        "\"fade\"",
-                        "0",
+                        "\"idle\"",
+                        "192",
+                        "80",
                         "\"linear\"",
-                        "1000",
+                        "150",
                         ""
                       ],
                       "subInstructions": []
                     }
                   ],
                   "events": []
-                }
-              ]
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "test_btn2",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Tween::AddObjectPositionTween"
-                  },
-                  "parameters": [
-                    "test_btn2",
-                    "Tween",
-                    "\"idle\"",
-                    "192",
-                    "96",
-                    "\"linear\"",
-                    "150",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "selected",
-                    "=",
-                    "2"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Tween::AddObjectPositionYTween"
-                  },
-                  "parameters": [
-                    "select",
-                    "Tween",
-                    "\"selected\"",
-                    "test_btn2.Y(\"selected\")",
-                    "\"linear\"",
-                    "150",
-                    "150"
-                  ],
-                  "subInstructions": []
                 },
                 {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreX"
-                  },
-                  "parameters": [
-                    "select",
-                    "=",
-                    "test_btn2.X(\"selected\")"
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "selected",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "select",
+                        "Tween",
+                        "\"selected\"",
+                        "test_btn.Y(\"selected\")",
+                        "\"linear\"",
+                        "50",
+                        "150"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "select",
+                        "=",
+                        "test_btn.X(\"selected\")"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 }
               ],
-              "events": []
+              "parameters": []
             },
             {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
               "disabled": false,
               "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+              "name": "button 2",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
                 {
-                  "type": {
-                    "inverted": false,
-                    "value": "Opacity"
-                  },
-                  "parameters": [
-                    "test_btn2",
-                    "=",
-                    "0"
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "test_btn2",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::AddObjectPositionTween"
+                      },
+                      "parameters": [
+                        "test_btn2",
+                        "Tween",
+                        "\"Hover\"",
+                        "160",
+                        "96",
+                        "\"linear\"",
+                        "150",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "selected",
+                        "=",
+                        "2"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SourisBouton"
+                          },
+                          "parameters": [
+                            "",
+                            "Left"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Tween::AddObjectScaleTween"
+                          },
+                          "parameters": [
+                            "test_btn2",
+                            "Tween",
+                            "\"grow\"",
+                            "1.25",
+                            "1.25",
+                            "\"linear\"",
+                            "1000",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Tween::AddObjectOpacityTween"
+                          },
+                          "parameters": [
+                            "test_btn2",
+                            "Tween",
+                            "\"fade\"",
+                            "0",
+                            "\"linear\"",
+                            "1000",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "buttons_on",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "test_btn2",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::AddObjectPositionTween"
+                      },
+                      "parameters": [
+                        "test_btn2",
+                        "Tween",
+                        "\"idle\"",
+                        "192",
+                        "96",
+                        "\"linear\"",
+                        "150",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "selected",
+                        "=",
+                        "2"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "select",
+                        "Tween",
+                        "\"selected\"",
+                        "test_btn2.Y(\"selected\")",
+                        "\"linear\"",
+                        "50",
+                        "150"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "select",
+                        "=",
+                        "test_btn2.X(\"selected\")"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 }
               ],
-              "actions": [
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "disabled": false,
+              "folded": false,
+              "name": "button 3",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
                 {
-                  "type": {
-                    "inverted": false,
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "test_btn2",
-                    ""
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "test_btn3",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::AddObjectPositionTween"
+                      },
+                      "parameters": [
+                        "test_btn3",
+                        "Tween",
+                        "\"Hover\"",
+                        "160",
+                        "112",
+                        "\"linear\"",
+                        "150",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "selected",
+                        "=",
+                        "3"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "SourisBouton"
+                          },
+                          "parameters": [
+                            "",
+                            "Left"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Tween::AddObjectScaleTween"
+                          },
+                          "parameters": [
+                            "test_btn3",
+                            "Tween",
+                            "\"grow\"",
+                            "1.25",
+                            "1.25",
+                            "\"linear\"",
+                            "1000",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Tween::AddObjectOpacityTween"
+                          },
+                          "parameters": [
+                            "test_btn3",
+                            "Tween",
+                            "\"fade\"",
+                            "0",
+                            "\"linear\"",
+                            "1000",
+                            ""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "buttons_on",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "test_btn3",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::AddObjectPositionTween"
+                      },
+                      "parameters": [
+                        "test_btn3",
+                        "Tween",
+                        "\"idle\"",
+                        "192",
+                        "112",
+                        "\"linear\"",
+                        "150",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "selected",
+                        "=",
+                        "3"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "select",
+                        "Tween",
+                        "\"selected\"",
+                        "test_btn3.Y(\"selected\")",
+                        "\"linear\"",
+                        "50",
+                        "150"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "select",
+                        "=",
+                        "test_btn3.X(\"selected\")"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 }
               ],
-              "events": []
+              "parameters": []
             }
-          ],
-          "parameters": []
+          ]
         }
       ],
       "layers": [
