@@ -2029,7 +2029,7 @@
                   "parameters": [
                     "panelSprite",
                     "=",
-                    "ScreenWidth()"
+                    "SceneWindowWidth()"
                   ],
                   "subInstructions": []
                 },
@@ -6971,7 +6971,7 @@
                       "parameters": [
                         "panelSprite",
                         "=",
-                        "ScreenWidth() / 2"
+                        "SceneWindowWidth() / 2"
                       ],
                       "subInstructions": []
                     },
@@ -6983,7 +6983,7 @@
                       "parameters": [
                         "panelSprite",
                         "=",
-                        "ScreenHeight()"
+                        "SceneWindowHeight()"
                       ],
                       "subInstructions": []
                     }
