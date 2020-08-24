@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Start",
+		"tags": "",
+		"body": "Hello there!\nwow\nthis is awesome!\namazing...\n[[Yes |ChoiceYes]]\n[[No |ChoiceNo]]",
+		"position": {
+			"x": 489,
+			"y": 132
+		},
+		"colorID": 0
+	},
+	{
+		"title": "ChoiceYes",
+		"tags": "",
+		"body": "Indeed!",
+		"position": {
+			"x": 754,
+			"y": 494
+		},
+		"colorID": 0
+	},
+	{
+		"title": "ChoiceNo",
+		"tags": "",
+		"body": "Wha???",
+		"position": {
+			"x": 261,
+			"y": 437
+		},
+		"colorID": 0
+	}
+]

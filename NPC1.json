@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Start",
+		"tags": "",
+		"body": "Hello there!\nwow\nthis is cool\n[[Yes|dialogueYes]]\n[[No|dialogueNo]]",
+		"position": {
+			"x": 426,
+			"y": -308
+		},
+		"colorID": 3
+	},
+	{
+		"title": "dialogueYes",
+		"tags": "",
+		"body": "awesome!",
+		"position": {
+			"x": 691,
+			"y": 27
+		},
+		"colorID": 0
+	},
+	{
+		"title": "dialogueNo",
+		"tags": "",
+		"body": "how sad",
+		"position": {
+			"x": 137,
+			"y": -41
+		},
+		"colorID": 0
+	}
+]
