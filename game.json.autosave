@@ -6792,7 +6792,7 @@
         },
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6816,7 +6816,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "name": "GUI",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -6834,6 +6834,18 @@
                       "parameters": [
                         "",
                         "Return"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "isMoving",
+                        "=",
+                        "0"
                       ],
                       "subInstructions": []
                     },
