@@ -1,26 +1,22 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 98,
+    "build": 99,
     "major": 4,
     "minor": 0,
     "revision": 0
   },
   "properties": {
-    "adMobAppId": "",
     "adaptGameResolutionAtRuntime": true,
     "folderProject": false,
-    "linuxExecutableFilename": "",
-    "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.gamename",
-    "projectFile": "C:\\Users\\mysel\\Desktop\\NitroBugz\\gdevelop\\game.json",
+    "projectUuid": "38aa9d28-2dd5-4c9a-b61f-1948f3e88fc0",
     "scaleMode": "nearest",
     "sizeOnStartupMode": "",
+    "useDeprecatedZeroAsDefaultZOrder": true,
     "useExternalSourceFiles": false,
     "version": "1.0.0",
-    "winExecutableFilename": "",
-    "winExecutableIconFile": "",
     "name": "NitroBugz",
     "author": "",
     "windowWidth": 160,
@@ -33,6 +29,7 @@
     "loadingScreen": {
       "showGDevelopSplash": true
     },
+    "extensionProperties": [],
     "extensions": [
       {
         "name": "BuiltinObject"
@@ -806,14 +803,14 @@
         "grid": true,
         "gridB": 255,
         "gridG": 180,
-        "gridHeight": 4,
+        "gridHeight": 16,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
         "gridR": 158,
-        "gridWidth": 4,
+        "gridWidth": 16,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 2.584
+        "zoomFactor": 3.424
       },
       "objectsGroups": [],
       "variables": [],
@@ -958,7 +955,12 @@
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "direction",
+              "value": "0"
+            }
+          ],
           "behaviors": [],
           "animations": [
             {
@@ -2568,6 +2570,11 @@
       ],
       "layers": [
         {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
           "name": "",
           "visibility": true,
           "cameras": [
@@ -2585,6 +2592,11 @@
           "effects": []
         },
         {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
           "name": "GUI",
           "visibility": true,
           "cameras": [],
@@ -2958,6 +2970,11 @@
       ],
       "layers": [
         {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
           "name": "",
           "visibility": true,
           "cameras": [
@@ -3081,7 +3098,7 @@
           "width": 0,
           "x": 192,
           "y": 112,
-          "zOrder": 12,
+          "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4705,6 +4722,11 @@
       ],
       "layers": [
         {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
           "name": "",
           "visibility": true,
           "cameras": [
@@ -4781,7 +4803,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -4813,7 +4835,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -5093,7 +5115,7 @@
                   "parameters": [
                     "",
                     "=",
-                    "player.X() + 16",
+                    "playercollision.X() + 16",
                     "",
                     ""
                   ],
@@ -5107,7 +5129,7 @@
                   "parameters": [
                     "",
                     "=",
-                    "player.Y()",
+                    "playercollision.Y()",
                     "",
                     ""
                   ],
@@ -5125,7 +5147,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Movement Walk",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -5218,6 +5240,19 @@
                   },
                   "parameters": [
                     "isMoving",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "player",
+                    "direction",
                     "=",
                     "1"
                   ],
@@ -5316,6 +5351,19 @@
                     "isMoving",
                     "=",
                     "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "player",
+                    "direction",
+                    "=",
+                    "2"
                   ],
                   "subInstructions": []
                 }
@@ -5425,6 +5473,19 @@
                     "1"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "player",
+                    "direction",
+                    "=",
+                    "3"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -5530,6 +5591,19 @@
                     "isMoving",
                     "=",
                     "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "player",
+                    "direction",
+                    "=",
+                    "4"
                   ],
                   "subInstructions": []
                 }
@@ -5917,7 +5991,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Stop moving",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -5994,7 +6068,214 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "player",
+                        "direction",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Up"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeAnimation"
+                      },
+                      "parameters": [
+                        "player",
+                        "=",
+                        "2"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "player",
+                        "direction",
+                        "=",
+                        "2"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Down"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeAnimation"
+                      },
+                      "parameters": [
+                        "player",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "player",
+                        "direction",
+                        "=",
+                        "3"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeAnimation"
+                      },
+                      "parameters": [
+                        "player",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "FlipX"
+                      },
+                      "parameters": [
+                        "player",
+                        "no"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "player",
+                        "direction",
+                        "=",
+                        "4"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Right"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeAnimation"
+                      },
+                      "parameters": [
+                        "player",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "FlipX"
+                      },
+                      "parameters": [
+                        "player",
+                        "yes"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             },
             {
               "disabled": false,
@@ -6792,7 +7073,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -7038,6 +7319,42 @@
               "parameters": []
             }
           ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "playercollision",
+                "impassable",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "playercollision",
+                "impassable",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         }
       ]
     }
@@ -7048,10 +7365,17 @@
       "description": "Provides an action for changing the type of the cursor (on Windows, macOS and Linux). \n\nCursors can be: \ndefault, pointer, help, progress, wait, cell, crosshair, text, move, grab, grabbing, not-allowed, zoom-in, zoom-out",
       "extensionNamespace": "",
       "fullName": "Cursor type ",
+      "helpPath": "",
+      "iconUrl": "",
       "name": "CursorType",
+      "previewIconUrl": "",
       "shortDescription": "Provides an action for changing the type of the cursor (on Windows, macOS and Linux).",
-      "tags": "cursor, javascript, desktop",
       "version": "0.0.1",
+      "tags": [
+        "cursor",
+        "javascript",
+        "desktop"
+      ],
       "eventsFunctions": [
         {
           "description": "Change the type of the cursor. Valid cursor names are \"default\", \"pointer\", \"help\", \"progress\", \"wait\", \"cell\", \"crosshair\", \"text\", \"move\", \"grab\", \"grabbing\", \"not-allowed\", \"zoom-in\" or \"zoom-out\".",
@@ -7081,7 +7405,8 @@
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": "var styleCursor = eventsFunctionContext.getArgument(\"style_cursor\") || \"default\" ;\nif (typeof document !== \"undefined\") {\n    document.body.style.cursor = styleCursor;\n}",
               "parameterObjects": "",
-              "useStrict": true
+              "useStrict": true,
+              "eventsSheetExpanded": false
             }
           ],
           "parameters": [
